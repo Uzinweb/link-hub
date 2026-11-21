@@ -10,18 +10,19 @@ export const GogginsNavbar = ({ onOpenQr }) => {
       </div>
 
       <div className="flex items-center gap-2">
-        {/* Yagona Mukammal Tugma: Ulashish & QR */}
+        {/* Yagona Mukammal Tugma: Ulashish & QR (Kattalashtirilgan, oson o'qiluvchi) */}
         <motion.button
           onClick={onOpenQr}
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
           title="Sahifani ulashish va QR kod"
-          className="flex items-center gap-2 px-4 py-1.5 sm:py-2 rounded-full 
-                     bg-white/5 hover:bg-[#c8a858] text-[#c8a858] hover:text-black 
-                     border border-[#c8a858]/35 transition-all duration-200 text-xs font-display tracking-wider cursor-pointer shadow-sm"
+          className="flex items-center gap-2 sm:gap-2.5 px-4 py-2 sm:px-5 sm:py-2.5 rounded-full 
+                     bg-[#141418] hover:bg-[#c8a858] text-[#f5d77f] hover:text-black 
+                     border border-[#c8a858]/45 hover:border-[#f5d77f] transition-all duration-200 
+                     text-xs sm:text-sm font-display font-bold tracking-wider cursor-pointer shadow-md hover:shadow-[0_0_15px_rgba(200,168,88,0.35)]"
         >
-          <QrCode className="w-3.5 h-3.5" />
-          <span>ULASHISH & QR</span>
+          <QrCode className="w-4 h-4 sm:w-4.5 sm:h-4.5 text-[#f5d77f] group-hover:text-black" />
+          <span className="whitespace-nowrap">ULASHISH & QR</span>
         </motion.button>
       </div>
     </header>

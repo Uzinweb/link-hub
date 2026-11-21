@@ -8,7 +8,7 @@ export const GogginsStats = ({ stats }) => {
         initial={{ opacity: 0, y: 15 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.3, duration: 0.4 }}
-        className="w-full p-4 sm:p-6 rounded-2xl bg-[#0c0c0e] border border-white/10 hover:border-[#c8a858]/50 transition-all duration-300 shadow-xl"
+        className="w-full p-4 sm:p-6 rounded-2xl bg-[#121216] border border-[#c8a858]/35 hover:border-[#f5d77f] transition-all duration-300 shadow-[0_6px_25px_rgba(0,0,0,0.6)] hover:shadow-[0_0_20px_rgba(200,168,88,0.2)]"
       >
         <div className="grid grid-cols-3 gap-2 sm:gap-4 divide-x divide-white/10 text-center">
           {stats.map((item, index) => (

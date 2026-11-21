@@ -6,13 +6,19 @@ import { DynamicIcon } from './DynamicIcon';
 export const GogginsHero = ({ profile, socials }) => {
   return (
     <div className="relative w-full overflow-hidden pt-72 sm:pt-96 pb-8 px-4 flex flex-col items-center text-center">
-      {/* 1. To'liq Qirqilgan Shaffof Portret Fotosurat (Orqa foni mutlaqo yo'q, sayt foniga 100% tushadi) */}
+      {/* 1. To'liq Qirqilgan Shaffof Portret Fotosurat (Orqa foni yo'q, pastki qismi fonga silliq singdirilgan) */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-sm sm:max-w-md h-[480px] sm:h-[540px] pointer-events-none select-none z-0">
         <img
           src={profile.heroBg}
           alt={`${profile.firstName} ${profile.lastName}`}
-          className="w-full h-full object-contain object-top drop-shadow-[0_15px_30px_rgba(0,0,0,0.4)]"
+          className="w-full h-full object-contain object-top drop-shadow-[0_15px_30px_rgba(0,0,0,0.5)]"
+          style={{
+            maskImage: 'linear-gradient(to bottom, black 50%, rgba(0,0,0,0.8) 70%, transparent 95%)',
+            WebkitMaskImage: 'linear-gradient(to bottom, black 50%, rgba(0,0,0,0.8) 70%, transparent 95%)'
+          }}
         />
+        {/* Pastki yelka qismini kompyuter va telefonda to'liq silliq singdiruvchi gradient */}
+        <div className="absolute inset-x-0 bottom-0 h-40 sm:h-48 bg-gradient-to-t from-[#050505] via-[#050505]/85 to-transparent pointer-events-none" />
       </div>
 
       {/* 2. So'zlar va Elementlar (Rasm ostida / ko'krak sohasida) */}

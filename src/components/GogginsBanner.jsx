@@ -14,7 +14,8 @@ export const GogginsBanner = ({ banner }) => {
         whileHover={{ scale: 1.01 }}
         whileTap={{ scale: 0.99 }}
         className="relative min-h-[190px] sm:min-h-[220px] rounded-2xl overflow-hidden flex items-center p-5 sm:p-8 
-                   border border-black/10 dark:border-white/10 hover:border-[#c8a858] transition-all duration-300 shadow-xl group cursor-pointer block"
+                   bg-[#101014] border border-[#c8a858]/35 hover:border-[#f5d77f] transition-all duration-300 
+                   shadow-[0_6px_25px_rgba(0,0,0,0.7)] hover:shadow-[0_0_25px_rgba(200,168,88,0.25)] group cursor-pointer block"
       >
         {/* Orqa fon rasmi */}
         <div 
@@ -23,19 +24,21 @@ export const GogginsBanner = ({ banner }) => {
         />
 
         {/* Qorayuvchi gradient qoplama */}
-        <div className="absolute inset-0 bg-gradient-to-r from-black via-black/90 to-black/70" />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#0a0a0d] via-[#0a0a0d]/90 to-[#0a0a0d]/70" />
 
         <div className="relative z-10 flex items-center gap-5 sm:gap-8 w-full">
           {/* Chap qism: 3D Kitob / Darslik Mockup */}
           <div className="flex-shrink-0 w-28 sm:w-36 h-36 sm:h-48 rounded-md overflow-hidden shadow-2xl border border-white/20 transform -rotate-2 group-hover:rotate-0 transition-transform duration-300 bg-white">
             <div className="w-full h-full p-2.5 sm:p-3 bg-gradient-to-br from-slate-950 via-black to-slate-900 text-white flex flex-col justify-between border-l-4 border-[#c8a858]">
               <div>
-                <span className="font-display text-[9px] sm:text-[10px] text-[#e5c468] tracking-widest uppercase block">
-                  FONETIKA
-                </span>
-                <span className="font-display text-sm sm:text-base font-bold leading-tight block mt-0.5">
+                <div className="font-display text-[9px] sm:text-[10px] text-[#f7e39a] tracking-[0.2em] uppercase font-bold mb-1.5 flex items-center gap-1.5">
+                  <span>FONETIKA</span>
+                  <span className="text-[#c8a858]">•</span>
+                  <span>TAJVID</span>
+                </div>
+                <div className="font-display text-sm sm:text-base font-extrabold leading-tight text-white tracking-wide">
                   ARAB TILI
-                </span>
+                </div>
 
                 {/* Arabcha Kalligrafik Yozuv va Harflar */}
                 <div className="mt-2 space-y-1 select-none">
@@ -70,8 +73,9 @@ export const GogginsBanner = ({ banner }) => {
             </p>
 
             {/* Oltin tugma */}
-            <div className="mt-2 px-5 py-2 sm:py-2.5 rounded-sm bg-[#c8a858] group-hover:bg-[#e5c468] text-black font-display text-xs sm:text-sm font-bold tracking-widest uppercase transition-colors shadow-lg">
-              {banner.buttonText}
+            <div className="mt-2 px-5 py-2.5 rounded-lg bg-gradient-to-r from-[#c8a858] via-[#f0d484] to-[#c8a858] group-hover:from-[#f0d484] group-hover:to-[#f7e39a] text-black font-display text-xs sm:text-sm font-extrabold tracking-widest uppercase transition-all shadow-lg flex items-center gap-2">
+              <span>{banner.buttonText}</span>
+              <span className="text-black/80 font-bold">→</span>
             </div>
           </div>
         </div>

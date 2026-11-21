@@ -28,12 +28,12 @@ export const GogginsResources = ({ resources }) => {
               transition={{ delay: 0.4 + index * 0.08, duration: 0.3 }}
               whileHover={{ x: 3 }}
               className="flex items-center gap-4 p-3.5 sm:p-4 rounded-xl 
-                         bg-white dark:bg-[#0e0e0e] hover:bg-[#fafafb] dark:hover:bg-[#151515] 
-                         border border-black/[0.06] dark:border-white/5 hover:border-[#b88e28]/60 dark:hover:border-[#c8a858]/60 
-                         transition-all duration-200 group cursor-pointer shadow-sm hover:shadow-md"
+                         bg-white dark:bg-[#121216] hover:bg-[#fafafb] dark:hover:bg-[#181820] 
+                         border border-black/[0.06] dark:border-[#c8a858]/25 hover:border-[#b88e28]/60 dark:hover:border-[#c8a858]/80 
+                         transition-all duration-200 group cursor-pointer shadow-sm hover:shadow-[0_4px_15px_rgba(200,168,88,0.15)]"
             >
               {/* Kichik Kvadrat Thumbnail */}
-              <div className="w-14 h-14 sm:w-16 sm:h-16 rounded-lg overflow-hidden flex-shrink-0 relative bg-slate-100 dark:bg-[#181818] border border-black/[0.06] dark:border-white/10 flex items-center justify-center">
+              <div className="w-14 h-14 sm:w-16 sm:h-16 rounded-lg overflow-hidden flex-shrink-0 relative bg-slate-100 dark:bg-[#181818] border border-black/[0.06] dark:border-[#c8a858]/30 flex items-center justify-center">
                 <img 
                   src={item.image} 
                   alt={item.title} 
@@ -46,10 +46,10 @@ export const GogginsResources = ({ resources }) => {
 
               {/* Matn Qismi */}
               <div className="flex-1 min-w-0">
-                <h5 className="font-display text-sm sm:text-base font-bold text-[#1e293b] dark:text-white uppercase tracking-wide truncate group-hover:text-[#8a6820] dark:group-hover:text-[#c8a858] transition-colors">
+                <h5 className="font-display text-sm sm:text-base font-bold text-[#1e293b] dark:text-white uppercase tracking-wide truncate group-hover:text-[#8a6820] dark:group-hover:text-[#f5d77f] transition-colors">
                   {item.title}
                 </h5>
-                <p className="font-sans text-xs sm:text-sm text-[#64748b] dark:text-[#888888] truncate mt-0.5">
+                <p className="font-sans text-xs sm:text-sm text-[#64748b] dark:text-gray-300 truncate mt-0.5">
                   {item.subtitle}
                 </p>
               </div>
