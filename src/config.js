@@ -10,9 +10,9 @@ export const personalConfig = {
     lastName: "OLLAYOROV",
     username: "@qirqming",
     tagline: "BIZNESNI TIZIMLASHTIRISH",
-    // Foydalanuvchining shaxsiy portret fotosurati
-    heroBg: "/profile_cutout.png",
-    avatar: "/profile_cutout.png",
+    // Foydalanuvchining shaxsiy portret fotosurati (to'liq asl formatdagi rasm)
+    heroBg: "/profile_full.jpg",
+    avatar: "/profile_full.jpg",
   },
 
   // Tilla doiradagi ijtimoiy tarmoqlar (Faqat Telegram, Instagram va YouTube)

@@ -6,24 +6,34 @@ import { DynamicIcon } from './DynamicIcon';
 export const GogginsHero = ({ profile, socials }) => {
   return (
     <div className="relative w-full overflow-hidden pt-72 sm:pt-96 pb-8 px-4 flex flex-col items-center text-center">
-      {/* 1. To'liq Qirqilgan Shaffof Portret Fotosurat (Yuz va jag' to'liq tiniq, faqat pastki kiyim qismi silliq fonga singadi) */}
+      {/* 1. Asl fotosurat (Barcha qirralari — yuqori, ikki yon va pastki qismi fonga 100% silliq singdirilgan) */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-sm sm:max-w-md h-[460px] sm:h-[520px] pointer-events-none select-none z-0">
+        {/* Gorizontal (chap va o'ng) qirralarni silliq erituvchi qatlam */}
         <div 
-          className="w-full h-full relative"
+          className="w-full h-full"
           style={{
-            maskImage: 'linear-gradient(to bottom, black 58%, rgba(0,0,0,0.85) 66%, rgba(0,0,0,0.25) 74%, transparent 80%)',
-            WebkitMaskImage: 'linear-gradient(to bottom, black 58%, rgba(0,0,0,0.85) 66%, rgba(0,0,0,0.25) 74%, transparent 80%)'
+            maskImage: 'linear-gradient(to right, transparent 0%, black 14%, black 86%, transparent 100%)',
+            WebkitMaskImage: 'linear-gradient(to right, transparent 0%, black 14%, black 86%, transparent 100%)'
           }}
         >
-          <img
-            src={profile.heroBg}
-            alt={`${profile.firstName} ${profile.lastName}`}
-            className="w-full h-full object-contain object-top drop-shadow-[0_15px_30px_rgba(0,0,0,0.5)]"
-          />
+          {/* Vertikal (tepa va past) qirralarni silliq erituvchi qatlam: Yuz va jag' 100% tiniq, tepa va past fonga singadi */}
+          <div 
+            className="w-full h-full relative"
+            style={{
+              maskImage: 'linear-gradient(to bottom, transparent 0%, black 8%, black 58%, rgba(0,0,0,0.85) 66%, rgba(0,0,0,0.2) 76%, transparent 84%)',
+              WebkitMaskImage: 'linear-gradient(to bottom, transparent 0%, black 8%, black 58%, rgba(0,0,0,0.85) 66%, rgba(0,0,0,0.2) 76%, transparent 84%)'
+            }}
+          >
+            <img
+              src={profile.heroBg}
+              alt={`${profile.firstName} ${profile.lastName}`}
+              className="w-full h-full object-contain object-top drop-shadow-[0_15px_30px_rgba(0,0,0,0.5)]"
+            />
+          </div>
         </div>
 
-        {/* Faqat eng pastki yelka qismini fonga singdiruvchi yumshoq gradient (yuz va jag' qismiga umuman tegmaydi) */}
-        <div className="absolute inset-x-0 bottom-0 h-24 sm:h-28 bg-gradient-to-t from-[#050505] via-[#050505]/80 to-transparent pointer-events-none" />
+        {/* Eng pastki yelka va ko'krak qismini fonga singdiruvchi yumshoq gradient */}
+        <div className="absolute inset-x-0 bottom-0 h-28 sm:h-32 bg-gradient-to-t from-[#050505] via-[#050505]/90 to-transparent pointer-events-none" />
       </div>
 
       {/* 2. So'zlar va Elementlar (Rasm ostida / ko'krak sohasida) */}
