@@ -6,13 +6,13 @@ import { DynamicIcon } from './DynamicIcon';
 export const GogginsHero = ({ profile, socials }) => {
   return (
     <div className="relative w-full overflow-hidden pt-72 sm:pt-96 pb-8 px-4 flex flex-col items-center text-center">
-      {/* 1. To'liq Qirqilgan Shaffof Portret Fotosurat (Orqa foni yo'q, barcha qirralari fonga silliq singdirilgan) */}
+      {/* 1. To'liq Qirqilgan Shaffof Portret Fotosurat (Yuz va jag' to'liq tiniq, faqat pastki kiyim qismi silliq fonga singadi) */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-sm sm:max-w-md h-[460px] sm:h-[520px] pointer-events-none select-none z-0">
         <div 
           className="w-full h-full relative"
           style={{
-            maskImage: 'linear-gradient(to bottom, black 20%, rgba(0,0,0,0.85) 35%, rgba(0,0,0,0.25) 50%, transparent 65%)',
-            WebkitMaskImage: 'linear-gradient(to bottom, black 20%, rgba(0,0,0,0.85) 35%, rgba(0,0,0,0.25) 50%, transparent 65%)'
+            maskImage: 'linear-gradient(to bottom, black 58%, rgba(0,0,0,0.85) 66%, rgba(0,0,0,0.25) 74%, transparent 80%)',
+            WebkitMaskImage: 'linear-gradient(to bottom, black 58%, rgba(0,0,0,0.85) 66%, rgba(0,0,0,0.25) 74%, transparent 80%)'
           }}
         >
           <img
@@ -22,8 +22,8 @@ export const GogginsHero = ({ profile, socials }) => {
           />
         </div>
 
-        {/* Fonga to'liq silliq singdiruvchi qora gradient qoplama */}
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-[#050505]/40 via-35% to-[#050505] to-68% pointer-events-none" />
+        {/* Faqat eng pastki yelka qismini fonga singdiruvchi yumshoq gradient (yuz va jag' qismiga umuman tegmaydi) */}
+        <div className="absolute inset-x-0 bottom-0 h-24 sm:h-28 bg-gradient-to-t from-[#050505] via-[#050505]/80 to-transparent pointer-events-none" />
       </div>
 
       {/* 2. So'zlar va Elementlar (Rasm ostida / ko'krak sohasida) */}
