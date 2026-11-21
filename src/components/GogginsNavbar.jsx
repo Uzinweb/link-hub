@@ -16,13 +16,13 @@ export const GogginsNavbar = ({ onOpenQr }) => {
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
           title="Sahifani ulashish va QR kod"
-          className="flex items-center gap-2 sm:gap-2.5 px-4 py-2 sm:px-5 sm:py-2.5 rounded-full 
-                     bg-[#141418] hover:bg-[#c8a858] text-[#f5d77f] hover:text-black 
-                     border border-[#c8a858]/45 hover:border-[#f5d77f] transition-all duration-200 
-                     text-xs sm:text-sm font-display font-bold tracking-wider cursor-pointer shadow-md hover:shadow-[0_0_15px_rgba(200,168,88,0.35)]"
+          className="flex items-center gap-2 sm:gap-3 px-4 py-2 sm:px-6 sm:py-2.5 rounded-full 
+                     bg-[#1a1a24] hover:bg-[#e5c468] text-[#f7e39a] hover:text-black 
+                     border-2 border-[#e5c468] hover:border-white transition-all duration-200 
+                     text-xs sm:text-base font-display font-extrabold tracking-wider cursor-pointer shadow-lg hover:shadow-[0_0_20px_rgba(229,196,104,0.4)]"
         >
-          <QrCode className="w-4 h-4 sm:w-4.5 sm:h-4.5 text-[#f5d77f] group-hover:text-black" />
-          <span className="whitespace-nowrap">ULASHISH & QR</span>
+          <QrCode className="w-4 h-4 sm:w-5 sm:h-5 text-[#f7e39a] group-hover:text-black" />
+          <span className="whitespace-nowrap font-display text-xs sm:text-base font-black tracking-wider">ULASHISH & QR</span>
         </motion.button>
       </div>
     </header>
