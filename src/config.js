@@ -10,9 +10,9 @@ export const personalConfig = {
     lastName: "OLLAYOROV",
     username: "@qirqming",
     tagline: "BIZNESNI TIZIMLASHTIRISH",
-    // Foydalanuvchining shaxsiy portret fotosurati (to'liq asl formatdagi rasm)
-    heroBg: "/profile_full.jpg",
-    avatar: "/profile_full.jpg",
+    // Foydalanuvchining shaxsiy portret fotosurati (yangi yuklangan asl studiya surati)
+    heroBg: "/profile_new.jpg",
+    avatar: "/profile_new.jpg",
   },
 
   // Tilla doiradagi ijtimoiy tarmoqlar (Faqat Telegram, Instagram va YouTube)
@@ -51,9 +51,10 @@ export const personalConfig = {
 
   // Katta Markaziy Banner
   featuredBanner: {
+    tag: "MUALLIFNING SHAXSIY TA'LIM LOYIHASI",
     title: "ARAB TILI VA FONETIKA",
-    subtitle: "TOVUSHLARNI TO'G'RI VA GO'ZAL TALAFFUZ QILISH SIRLARI",
-    buttonText: "BOG'LANISH",
+    subtitle: "Tovushlarni to'g'ri va go'zal talaffuz qilish sirlari (5 yillik mualliflik tajribasi)",
+    buttonText: "KURSNI KO'RISH",
     url: "https://t.me/qirqming",
     bgImage: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1000&q=80",
   },
