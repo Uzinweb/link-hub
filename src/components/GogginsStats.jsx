@@ -23,8 +23,8 @@ export const GogginsStats = ({ stats }) => {
                 {item.label}
               </div>
 
-              {/* Qisqa Ta'rif */}
-              <div className="hidden sm:block font-sans text-[11px] text-gray-400 mt-0.5 truncate max-w-[140px]">
+              {/* Qisqa Ta'rif - kesilmasdan to'liq va chiroyli o'qiluvchi */}
+              <div className="font-sans text-[10px] sm:text-[11px] text-gray-400 mt-0.5 leading-tight text-center px-1">
                 {item.desc}
               </div>
             </div>

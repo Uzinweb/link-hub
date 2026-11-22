@@ -24,9 +24,9 @@ export const personalConfig = {
 
   // 1. Nufuz va Ishonch Metrikalari (1000+ shogirdlar bilan)
   stats: [
-    { value: "5+ YIL", label: "TAJRIBA", desc: "Ta'lim va tizimlashtirish" },
+    { value: "5+ YIL", label: "TAJRIBA", desc: "Ta'lim" },
     { value: "1,000+", label: "SHOGIRDLAR", desc: "Muvaffaqiyatli bitiruvchilar" },
-    { value: "30+", label: "LOYIHALAR", desc: "Tizimlashtirilgan bizneslar" },
+    { value: "10+", label: "LOYIHALAR", desc: "Tizimlashtirilgan bizneslar" },
   ],
 
   // 2 ta Yonma-yon Karta (Grid 2 cols)
